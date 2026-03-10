@@ -38,6 +38,7 @@
   "actions/sendMessage/error": "Не удалось отправить сообщение",
   "actions/loadModel/error": "🥲 Не удалось загрузить модель",
   "actions/addFile": "[Экспериментально] Прикрепить файл к этому сообщению\n(.pdf, текст или .docx)",
+  "actions/addFile/label": "Прикрепить файл",
   "actions/changeRole": "Переключиться между ролями Пользователя и Ассистента.\n\nЭто полезно для направления диалога в определенное русло.\n\nМожно использовать для моделирования сценариев 'обучения на нескольких примерах' или 'обучения в контексте'.",
   "actions/addImage": "Добавить изображение",
   "actions/deleteMessage": "Удалить сообщение",
@@ -135,6 +136,9 @@
       "expandTooltip": "Развернуть блок информации отладки"
     }
   },
+  "chatTabOptions/clearAllMessages": "Очистить все сообщения...",
+  "chatTabOptions/duplicateChat": "Дублировать чат",
+
   "topBarActions/duplicateChat": "Дублировать",
   "topBarActions/clearChat": "Очистить чат",
   "topBarActions/clearChatConfirmation": "Вы уверены, что хотите удалить все сообщения из этого чата?",
@@ -206,6 +210,12 @@
     "stopReason.maxPredictedTokensReached": "Достигнут максимальный лимит предсказанных токенов",
     "stopReason.contextLengthReached": "Достигнут лимит длины контекста",
     "speculativeDecodedBy": "Черновая модель: {{decodedBy}}",
-    "speculativeDecodingStats": "Принято {{accepted}}/{{total}} черновых токенов ({{percentage}}%)"
+    "speculativeDecodingStats": "Принято {{accepted}}/{{total}} черновых токенов ({{percentage}}%)",
+    "speculativeDecodingAcceptedPercentage": "{{percentage}}% принятых черновых токенов",
+    "speculativeDecodingTooltip": "Принято {{accepted}}/{{total}} черновых токенов"
+  },
+
+  "tabs": {
+    "systemPromptEditorTab.headerLabel": "Редактирование системного промпта"
   }
 }
