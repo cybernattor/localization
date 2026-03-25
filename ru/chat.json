@@ -57,6 +57,8 @@
   "actions/loadLastModel": "Перезагрузить последнюю использованную модель",
   "actions/loadLastModel/tooltip": "Нажмите, чтобы загрузить модель, которую вы последний раз использовали с этим чатом:\n\n{{lastModel}}",
   "actions/loadLastModel/error": "Ошибка при загрузке последней использованной модели.",
+  "actions/clearLastUsedModel": "Очистить последнюю использованную модель",
+  "actions/clearLastUsedModel/error": "Не удалось очистить последнюю использованную модель.",
   "actions/continueCurrentModel": "Использовать текущую модель",
   "actions/continueCurrentModel/tooltip": "Текущая модель: {{currentModel}}",
   "actions/changeToLastUsedModel": "Загрузить {{lastModel}}",
@@ -86,6 +88,8 @@
   "actions/createChatAtRoot/error": "Не удалось создать чат на корневом уровне",
   "actions/createFolderAtRoot": "Создать новую папку",
   "actions/createFolderAtRoot/error": "Не удалось создать папку на корневом уровне",
+  "actions/openInFolder/mac": "Показать в Finder",
+  "actions/openInFolder/pc": "Показать в Проводнике",
   "actions/createChat/error": "Не удалось создать чат",
   "actions/deleteChat/errorTitle": "Не удалось удалить чат",
   "userFile/fileSizeLimit": "Ограничение размера файла: ",
@@ -127,6 +131,7 @@
   "style/debugBlocks/label": "Показывать блоки отладки",
   "style/thinkingUI/label": "Разворачивать блоки рассуждений по умолчанию",
   "style/chatFullWidth/label": "Растягивать чат на всю ширину",
+  "style/chatUtilityMenusShowLabel/label": "Показывать подписи пунктов меню утилит чата",
   "messageBlocks": {
     "expandBlockTooltip": "Развернуть содержимое",
     "collapseBlockTooltip": "Свернуть содержимое",
@@ -138,7 +143,6 @@
   },
   "chatTabOptions/clearAllMessages": "Очистить все сообщения...",
   "chatTabOptions/duplicateChat": "Дублировать чат",
-
   "topBarActions/duplicateChat": "Дублировать",
   "topBarActions/clearChat": "Очистить чат",
   "topBarActions/clearChatConfirmation": "Вы уверены, что хотите удалить все сообщения из этого чата?",
@@ -170,7 +174,8 @@
         "placeholder": "Созданные вами плагины будут отображаться здесь"
       },
       "startRunningDevelopmentPlugin/error": "Не удалось запустить плагин в режиме разработки",
-      "stopRunningDevelopmentPlugin/error": "Не удалось остановить плагин в режиме разработки"
+      "stopRunningDevelopmentPlugin/error": "Не удалось остановить плагин в режиме разработки",
+      "forceReInitPlugin/error": "Не удалось перезапустить плагин"
     },
     "pluginConfiguration": {
       "title": "Настройка плагина",
@@ -194,7 +199,11 @@
         "revealInFinder": "Показать в Finder",
         "openInFileExplorer": "Открыть в проводнике"
       }
-    }
+    },
+    "localFork": {
+      "error": "Не удалось создать локальную копию разработки плагина."
+    },
+    "restartErrorPlugin/error": "Не удалось перезапустить плагин"
   },
   "genInfo": {
     "tokensPerSecond": "{{tokensPerSecond}} токенов/сек",
@@ -214,7 +223,6 @@
     "speculativeDecodingAcceptedPercentage": "{{percentage}}% принятых черновых токенов",
     "speculativeDecodingTooltip": "Принято {{accepted}}/{{total}} черновых токенов"
   },
-
   "tabs": {
     "systemPromptEditorTab.headerLabel": "Редактирование системного промпта"
   }
